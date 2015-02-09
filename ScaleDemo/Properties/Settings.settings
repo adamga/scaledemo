@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ScaleDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dbRead" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">read</Value>
+    </Setting>
+    <Setting Name="dbWrite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">write</Value>
+    </Setting>
+    <Setting Name="queueName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">scaledemo</Value>
+    </Setting>
+    <Setting Name="blobContainer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">scaledemo</Value>
+    </Setting>
+    <Setting Name="SiteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">scaledemo-504b4</Value>
+    </Setting>
+    <Setting Name="WEBSITE_ARR_SESSION_AFFINITY_DISABLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

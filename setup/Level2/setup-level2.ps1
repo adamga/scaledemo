@@ -17,11 +17,11 @@ else
 
 	#Resource Group Properties
 	$RG_Name = "scaleDemo" + $Random2
-	$RG_Location = "West Us"
+	$RG_Location = "East Us"
 
 	#Web Hosting Plan Location1
 	$WHP1_Name = "WHP" + $Random1
-	$WHP1_Location = "West Europe"
+	$WHP1_Location = "East US"
 
 	#Website Location 1
 	$WS1_Name = "scaledemo-" +  $Random1
@@ -30,9 +30,9 @@ else
 		
 	#SQL Servers
 	$SQL1_Server = "scaledemosql-" +  $Random1
-	$SQL_Database = "scaleDB"
-	$SQL_User = "scaleAdmin"
-	$SQL_Password = "p@ssw0rd"
+	$SQL_Database = "agscaleDB"
+	$SQL_User = "adamga"
+	$SQL_Password = "Squire123"
 
 	#Storage Accounts
 	$SA1_Name = "scaledemostorage" +  $Random1
@@ -100,11 +100,11 @@ else
 	try 
 	{ 
 		$primaryDB.Name = "read"
-		$primaryDB.ConnectionString = "Data Source=" + $SQL1_Server + ".database.windows.net; Initial Catalog=scaleDB; User ID=scaleAdmin; Password=p@ssw0rd"
+		$primaryDB.ConnectionString = "Data Source=" + $SQL1_Server + ".database.windows.net; Initial Catalog=scaleDB; User ID=adamga; Password=Squire123"
 		$primaryDB.Type = "SQLAzure"
 
         $secondaryDB.Name = "write"
-		$secondaryDB.ConnectionString = "Data Source=" + $SQL1_Server + ".database.windows.net; Initial Catalog=scaleDB; User ID=scaleAdmin; Password=p@ssw0rd"
+		$secondaryDB.ConnectionString = "Data Source=" + $SQL1_Server + ".database.windows.net; Initial Catalog=scaleDB; User ID=adamga; Password=Squire123"
 		$secondaryDB.Type = "SQLAzure"
 
 		$Site1Storage.Name = $WS1_Name

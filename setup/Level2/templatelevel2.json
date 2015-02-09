@@ -13,11 +13,11 @@
     //SQL Parameters
     "serverName": { "type": "string" },
     
-    "databaseName": { "type": "string", "defaultValue": "scaleDb" },
+    "databaseName": { "type": "string", "defaultValue": "agscaleDb" },
 
-    "administratorLogin": { "type": "string", "defaultValue": "scaleAdmin" },
+    "administratorLogin": { "type": "string", "defaultValue": "adamga" },
 
-    "administratorLoginPassword": { "type": "string","defaultValue": "p@ssw0rd" },
+    "administratorLoginPassword": { "type": "string","defaultValue": "Squire123" },
 
     "collation": { "type": "string", "defaultValue": "SQL_Latin1_General_CP1_CI_AS"},
 
@@ -111,7 +111,7 @@
           "dependsOn": ["[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"],
           "properties": 
           {
-            "RepoUrl": "https://github.com/btardif/ScaleDemo",
+            "RepoUrl": "https://github.com/adamga/scaledemo",
             "branch": "master",
             "IsManualIntegration": true
           }

@@ -343,6 +343,10 @@
     <Content Include="Default.cshtml" />
     <Content Include="New.cshtml" />
     <Content Include="Properties\webjobs-list.json" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -370,6 +374,11 @@
     <Content Include="_SiteLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Content Include="App_Code\EnumerableExtensions.cs" />
     <Content Include="App_Code\MultiThumbnailGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
