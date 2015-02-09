@@ -1,0 +1,7 @@
+﻿@{
+    var appSettings = System.Configuration.ConfigurationManager.AppSettings;
+    var dbRead = appSettings["dbRead"];
+    var dbWrite = appSettings["dbWrite"];
+
+    WebSecurity.InitializeDatabaseConnection(dbWrite, "UserProfiles", "UserId", "Email", true);
+}
