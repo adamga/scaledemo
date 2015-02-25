@@ -3,6 +3,9 @@
   "WebJobs": [
     {
       "filePath": "../CQRS/CQRS.csproj"
+    },
+    {
+      "filePath": "../AGWebJob1/AGWebJob1.csproj"
     }
   ]
 }
